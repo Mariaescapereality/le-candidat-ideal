@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071b3a">
+  <title>Le Candidat Idéal — Entretien de recrutement</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">◆</span>
+        <div>
+          <p class="eyebrow">GRAND ENTRETIEN DE RECRUTEMENT</p>
+          <h1>Le Candidat Idéal</h1>
+        </div>
+      </div>
+      <div class="top-meta">
+        <span class="live-dot"></span>
+        <span>ÉDITION SPÉCIALE</span>
+      </div>
+    </header>
+
+    <section class="game-card" aria-live="polite">
+      <div class="progress-row">
+        <span id="act-label">ACTE 1 — VÉRIFICATION DU PROFIL</span>
+        <span id="question-counter">QUESTION 1 / 28</span>
+      </div>
+      <div class="progress-track" aria-label="Progression">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+
+      <div class="question-area" id="question-area">
+        <div class="question-number" id="question-number">QUESTION 01</div>
+        <h2 id="question-text">Êtes-vous français ?</h2>
+        <p class="instruction" id="instruction">Une seule bonne réponse. Votre avenir se joue maintenant.</p>
+        <div class="timer-wrap" id="timer-wrap" hidden>
+          <span>VOTRE TEMPS EST COMPTÉ</span>
+          <strong id="timer">3</strong>
+        </div>
+        <div class="answers" id="answers">
+          <button class="answer-btn" id="yes-btn" type="button">OUI</button>
+          <button class="answer-btn" id="no-btn" type="button">NON</button>
+        </div>
+        <p class="feedback" id="feedback" role="status"></p>
+      </div>
+
+      <section class="result-area" id="result-area" hidden>
+        <p class="result-kicker" id="result-kicker"></p>
+        <h2 id="result-title"></h2>
+        <p id="result-message"></p>
+        <img id="result-image" src="" alt="Résultat du questionnaire">
+        <button class="restart-btn" id="restart-btn" type="button">RECOMMENCER L'ENTRETIEN</button>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <span>LE RECRUTEMENT, MAIS ENCORE PLUS ABSURDE... Ou pas.</span>
+      <span>© SERVICE DES RESSOURCES INHUMAINES</span>
+    </footer>
+  </main>
+</body>
+</html>
